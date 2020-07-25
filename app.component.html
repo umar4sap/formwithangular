@@ -1,27 +1,27 @@
 <body>
   <div class="container">
       <div class="progress">
-          <div class="progress-bar" id="pro-bar" role="progressbar" style="width: 17%" aria-valuenow="50" aria-valuemin="0"
+          <div class="progress-bar" id="pro-bar" role="progressbar" width="{{progressValue}}" aria-valuenow="50" aria-valuemin="0"
               aria-valuemax="100"></div>
       </div>
       <div class="abt-cont">
           <ul>
-              <div class="circle"></div>
+              <div class="circle" ></div>
 
-              <li class="fas fa-user">
+              <li class="fas fa-user" (click)="trigger('about')" id="about">
                   <p>
                       ABOUT
                   </p>
               </li>
 
               <div class="circle"></div>
-              <li class="fas fa-cog">
+              <li class="fas fa-cog" (click)="trigger('account')">
                   <p>
                       ACCOUNT
                   </p>
               </li>
-              <div class="circle"></div>
-              <li class="fas fa-map-marked-alt">
+              <div class="circle" ></div>
+              <li class="fas fa-map-marked-alt" (click)="trigger('addres')">
                   <p>
                       ADDRESS
                   </p>
